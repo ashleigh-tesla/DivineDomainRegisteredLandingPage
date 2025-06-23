@@ -23,7 +23,7 @@
         margin: 0;
         font-family: "Poppins", sans-serif;
         color: #000;
-        overflow: hidden;
+        overflow: auto;
       }
       html,
       body {
@@ -100,7 +100,6 @@
         width: 100%;
         position: relative;
         padding: 1rem;
-        text-align: center;
         z-index: 2;
       }
       .check::before {
@@ -115,6 +114,7 @@
 
       .pivot-shape {
         position: fixed;
+        overflow: visible;
         width: 40px;
         height: 40px;
         background: #ffae45;
@@ -122,6 +122,19 @@
         transform: translate(-50%, -50%);
         pointer-events: none;
         z-index: 1;
+      }
+
+      .africalogo {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+      }
+      .africalogo img {
+        width: 100%;
+        height: auto;
       }
       @media screen and (max-width: 768px) {
         .background {
@@ -132,16 +145,25 @@
             url("https://www.divineonline.solutions/wp-content/uploads/2023/04/Post-5.jpg");
           background-position: center;
           background-size: cover;
+          flex-direction: column;
+        }
+        .africalogo {
+          position: static; /* remove fixed positioning */
+          width: 100%; /* full width below content */
+          text-align: center; /* center the logo image */
+          margin-top: 1rem; /* optional spacing */
+        }
+
+        .africalogo img {
+          width: 50%; /* or any size suitable for small screens */
+          height: auto;
+        }
+
+        .content {
+          order: -1; /* ensure .content comes before .africalogo in flex order */
         }
       }
       @media screen and (min-width: 768px) {
-        .background {
-          background-image: linear-gradient(
-              rgba(255, 255, 255, 0.5),
-              rgba(255, 255, 255, 0.5)
-            ),
-            url("https://www.divineonline.solutions/wp-content/uploads/2023/04/Post-5.jpg");
-        }
         .content {
           width: 100%;
           padding-left: 5%;
@@ -151,29 +173,35 @@
           top: 50%;
           transform: translateY(-50%);
         }
-      }
-      @media screen and (min-width: 1024px) {
-        .background {
-          background-image: url("https://www.divineonline.solutions/wp-content/uploads/2023/04/Post-5.jpg");
+        .africalogo {
+          width: 20%;
         }
-        .content {
-          width: 75%;
-        }
-      }
-      @media screen and (min-width: 1440px) {
-        .background {
-          background-image: url("https://www.divineonline.solutions/wp-content/uploads/2023/04/Post-5.jpg");
-        }
-        .content {
+        .africalogo img {
           width: 70%;
         }
       }
-      @media screen and (min-width: 1920px) {
-        .background {
-          background-image: url("https://www.divineonline.solutions/wp-content/uploads/2023/04/Post-5.jpg");
+      @media screen and (min-width: 1024px) {
+        .content {
+          width: 75%;
         }
+        .africalogo {
+          width: 25%;
+        }
+      }
+      @media screen and (min-width: 1440px) {
+        .content {
+          width: 70%;
+        }
+        .africalogo {
+          width: 30%;
+        }
+      }
+      @media screen and (min-width: 1920px) {
         .content {
           width: 65%;
+        }
+        .africalogo {
+          width: 35%;
         }
       }
     </style>
@@ -228,6 +256,12 @@
           >
           website.
         </p>
+      </div>
+      <div class="africalogo">
+        <img
+          src="https://www.divineonline.solutions/wp-content/uploads/2023/04/divine3.png"
+          alt="Divine Logo"
+        />
       </div>
     </div>
     <script>
