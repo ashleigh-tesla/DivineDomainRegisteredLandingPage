@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Website Coming Soon</title>
+    <meta name="description" content="Default Web Hosting Page" />
+    <meta name="author" content="DIVINE" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      ::after,
+      ::before {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        color: #000;
+        overflow: hidden;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      h1 {
+        font-size: 3rem;
+        color: #2c65cb;
+      }
+      h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      h4 {
+        font-size: 1.35rem;
+      }
+      a {
+        color: #2c65cb;
+        transition: color 250ms;
+      }
+      a:hover {
+        color: #49bced;
+      }
+      hr {
+        border: none;
+        border-top: 1.5px solid #ffae45;
+        margin-block: 2rem;
+      }
+      .mt-0 {
+        margin-top: 0;
+      }
+      .mt-3 {
+        margin-top: 1rem;
+      }
+      .mt-4 {
+        margin-top: 2rem;
+      }
+      .mb-0 {
+        margin-bottom: 0;
+      }
+      .mb-3 {
+        margin-bottom: 1rem;
+      }
+      .my-1 {
+        margin-block: 0.5rem;
+      }
+      .fw-light {
+        font-weight: 300;
+      }
+      .fw-extra {
+        font-weight: 500;
+      }
+      .fw-bold {
+        font-weight: 600;
+      }
+      .background {
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)
+          ),
+          url("https://www.divineonline.solutions/wp-content/uploads/2023/04/Post-5.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: auto 100%;
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+      .content {
+        width: 100%;
+        position: relative;
+        padding: 1rem;
+        text-align: center;
+        z-index: 2;
+      }
+      .check::before {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23FFF' fill-opacity='.01' d='M0 0h16v16H0z'/%3E%3Cpath fill='%23ffae45' fill-rule='nonzero' d='M5.281 11.143l8.229-8.14a.875.875 0 1 1 1.23 1.244l-8.844 8.75a.875.875 0 0 1-1.232 0L1.259 9.618A.875.875 0 1 1 2.49 8.376l2.79 2.767z'/%3E%3C/g%3E%3C/svg%3E");
+        padding-right: 8px;
+      }
+
+      .pivot-shape {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        background: #ffae45;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        z-index: 1;
+      }
+      @media screen and (max-width: 768px) {
+        .background {
+          background-image: linear-gradient(
+              rgba(255, 255, 255, 0.5),
+              rgba(255, 255, 255, 0.5)
+            ),
+            url("https://www.divineonline.solutions/wp-content/uploads/2023/04/Post-5.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .background {
+          background-image: linear-gradient(
+              rgba(255, 255, 255, 0.5),
+              rgba(255, 255, 255, 0.5)
+            ),
+            url("https://www.divineonline.solutions/wp-content/uploads/2023/04/Post-5.jpg");
+        }
+        .content {
+          width: 100%;
+          padding-left: 5%;
+          padding-right: 5%;
+          text-align: left;
+          padding-bottom: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        .background {
+          background-image: url("https://www.divineonline.solutions/wp-content/uploads/2023/04/Post-5.jpg");
+        }
+        .content {
+          width: 75%;
+        }
+      }
+      @media screen and (min-width: 1440px) {
+        .background {
+          background-image: url("https://www.divineonline.solutions/wp-content/uploads/2023/04/Post-5.jpg");
+        }
+        .content {
+          width: 70%;
+        }
+      }
+      @media screen and (min-width: 1920px) {
+        .background {
+          background-image: url("https://www.divineonline.solutions/wp-content/uploads/2023/04/Post-5.jpg");
+        }
+        .content {
+          width: 65%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="pivot-shape"></div>
+      <div class="content">
+        <h1 class="domainname mb-0"></h1>
+        <h2 class="fw-extra mt-0">
+          This Domain Has Been Successfully Registered!
+        </h2>
+        <p class="mt-0 fw-light">
+          We are excited to announce that it<span class="domainname"></span> has
+          been registered and is currently under development.
+        </p>
+        <h3 class="fw-extra mb-0">What's Next?</h3>
+        <p class="mt-0 fw-light">
+          The owner of this domain is busy creating something awesome.<br />
+          Be sure to check back soon for updates!
+        </p>
+        <hr />
+        <h3 class="fw-light mb-0">
+          Brought to you by <span class="fw-bold">DIVINE ONLINE SOLUTIONS</span>
+        </h3>
+        <p class="mt-0 fw-light">
+          As your trusted hosting partner, we are committed to providing
+          reliable, secure, and user-friendly solutions.
+        </p>
+        <div class="mt-3">
+          <h4 class="fw-extra mb-3">Why Choose DIVINE ONLINE SOLUTIONS?</h4>
+          <p class="my-1 fw-light">
+            <span class="check fw-bold">Speed: </span>Our servers are optimized
+            for peak performance.
+          </p>
+          <p class="my-1 fw-light">
+            <span class="check fw-bold">Security: </span>Top-notch measures to
+            keep your data safe.
+          </p>
+          <p class="my-1 fw-light">
+            <span class="check fw-bold">Support: </span>Expert Customer Support
+            Team ready to assist you.
+          </p>
+        </div>
+        <p class="mt-4 fw-light">
+          For more information, visit the
+          <a
+            class="fw-bold"
+            href="https://www.divineonline.solutions/"
+            rel="sponsored"
+            >DIVINE ONLINE SOLUTIONS</a
+          >
+          website.
+        </p>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", () => {
+        hostnamedisplay();
+
+        const shape = document.querySelector(".pivot-shape");
+        const radius = 100;
+        let targetX, targetY;
+        let currentX, currentY;
+
+        function getBackgroundCenter() {
+          const bg = document.querySelector(".background");
+          const rect = bg.getBoundingClientRect();
+          const x = rect.right - rect.height / 2;
+          const y = rect.top + rect.height / 2;
+          return { x, y };
+        }
+
+        function updatePosition() {
+          if (currentX == null || currentY == null) {
+            currentX = targetX;
+            currentY = targetY;
+          } else {
+            currentX += (targetX - currentX) * 0.1;
+            currentY += (targetY - currentY) * 0.1;
+          }
+          shape.style.left = `${currentX}px`;
+          shape.style.top = `${currentY}px`;
+          requestAnimationFrame(updatePosition);
+        }
+
+        function setInitialPosition() {
+          const center = getBackgroundCenter();
+          targetX = center.x;
+          targetY = center.y;
+          currentX = targetX;
+          currentY = targetY;
+          shape.style.left = `${currentX}px`;
+          shape.style.top = `${currentY}px`;
+        }
+
+        setInitialPosition();
+        requestAnimationFrame(updatePosition);
+
+        window.addEventListener("mousemove", (e) => {
+          const center = getBackgroundCenter();
+          const deltaX = e.clientX - center.x;
+          const deltaY = e.clientY - center.y;
+          const angle = Math.atan2(deltaY, deltaX);
+          targetX = center.x + Math.cos(angle) * radius;
+          targetY = center.y + Math.sin(angle) * radius;
+        });
+
+        window.addEventListener("resize", () => {
+          setInitialPosition();
+        });
+      });
+
+      function hostnamedisplay() {
+        var x = location.hostname;
+        document
+          .querySelectorAll(".domainname")
+          .forEach((el) => (el.innerHTML = x));
+      }
+    </script>
+  </body>
+</html>
